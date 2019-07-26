@@ -1,7 +1,7 @@
 {
   "name": "simple-component",
   "version": "0.1.0",
-  "description": "A demo of creating a react component with webpack, jest, enzyme and puppeteer.",
+  "description": "A demo of creating a react component with webpack, babel, jest, enzyme and puppeteer.",
   "main": "dist/index.js",
   "scripts": {
     "test": "better-npm-run test",
