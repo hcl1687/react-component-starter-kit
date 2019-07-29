@@ -7,8 +7,8 @@
     "beforeAll": false,
     "page": false,
     "expect": false,
-    "puppeteer": false,
-    "console": false
+    "console": false,
+    "PATH": false
   },
   "rules": {
     "no-console": "off"

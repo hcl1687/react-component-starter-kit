@@ -1,9 +1,6 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const path = require('path')
-
-const dist = path.resolve(__dirname, './dist')
 const src = path.resolve(__dirname, './src')
-
 const cssLoaders = [{
   loader: 'style-loader'
 },
@@ -26,27 +23,6 @@ const cssLoaders = [{
 }]
 
 module.exports = {
-  entry: './src/index.jsx',
-  output: {
-    path: dist,
-    filename: 'index.js',
-    library: 'SimpleComp',
-    libraryTarget: 'umd'
-  },
-  externals: {
-    react: {
-      commonjs: 'react',
-      commonjs2: 'react',
-      amd: 'React',
-      root: 'React'
-    },
-    'react-dom': {
-      commonjs: 'react-dom',
-      commonjs2: 'react-dom',
-      amd: 'ReactDOM',
-      root: 'ReactDOM'
-    }
-  },
   module: {
     rules: [{
       test: /\.jsx?$/,
@@ -82,9 +58,6 @@ module.exports = {
       }]
     }]
   },
-  plugins: [
-    new ExtractTextPlugin('index.css')
-  ],
   resolve: {
     extensions: ['*', '.js', '.jsx', '.css']
   }
