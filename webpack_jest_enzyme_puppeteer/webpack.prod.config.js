@@ -1,5 +1,4 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const baseConfig = require('./webpack.base.config')
 const merge = require('webpack-merge')
 const path = require('path')
@@ -29,7 +28,6 @@ module.exports = merge(baseConfig, {
     }
   },
   plugins: [
-    // new UglifyJsPlugin(),
     new ExtractTextPlugin('index.css')
   ]
 })
