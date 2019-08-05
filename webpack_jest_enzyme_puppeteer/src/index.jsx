@@ -1,6 +1,7 @@
-import './index.css'
+import './style/index.css'
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import { __ } from './utils/i18n'
 import classnames from 'classnames'
 
 export default class SimpleComp extends Component {
@@ -11,6 +12,9 @@ export default class SimpleComp extends Component {
 
   render () {
     const { className, value } = this.props
-    return <div className={classnames('simple', className)}>{value}</div>
+    return <div className={classnames('simple', className)}>
+      <div className='title'>{__('title')}</div>
+      <div className='content'>{value}</div>
+    </div>
   }
 }
