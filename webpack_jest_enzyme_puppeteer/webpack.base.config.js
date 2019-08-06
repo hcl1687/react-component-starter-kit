@@ -59,6 +59,9 @@ module.exports = {
     }]
   },
   resolve: {
-    extensions: ['*', '.js', '.jsx', '.css', '.json']
+    extensions: ['*', '.js', '.jsx', '.css', '.json'],
+    alias: {
+      '~': src
+    }
   }
 }

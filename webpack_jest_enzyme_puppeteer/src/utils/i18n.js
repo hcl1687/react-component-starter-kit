@@ -52,3 +52,10 @@ export function __ (...args) {
   const I18N = getI18n()
   return I18N.translate(...args)
 }
+
+export function translateFactory (prefix) {
+  return (key, ...rest) => {
+    key = `${prefix}.${key}`
+    return __(key, ...rest)
+  }
+}
