@@ -90,7 +90,7 @@
     "karma-phantomjs-launcher": "^1.0.4",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^4.0.2",
-    "mocha": "^6.2.0",
+    "mocha": "^10.2.0",
     "phantomjs-polyfill": "0.0.2",
     "postcss": "^7.0.17",
     "postcss-browser-reporter": "^0.6.0",
